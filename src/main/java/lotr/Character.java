@@ -12,7 +12,9 @@ public abstract class Character {
   public Character(int hp, int power){
     setPower(power);
     setHp(hp);
-    kick_obj = GameManager.kicksConstructor.create_kick(this);
+  }
+  public void setKick_obj(BasicKick kick_obj){
+    this.kick_obj = kick_obj;
   }
 
   public int getPower() {
