@@ -7,12 +7,12 @@ import kick.KicksConstructor;
 public abstract class Character {
   private int power;
   private int hp;
-  private BasicKick kick;
+  private BasicKick kick_obj;
 
   public Character(int hp, int power){
     setPower(power);
     setHp(hp);
-    kick = GameManager.kicksConstructor.create_kick(this);
+    kick_obj = GameManager.kicksConstructor.create_kick(this);
   }
 
   public int getPower() {
@@ -40,7 +40,7 @@ public abstract class Character {
   }
 
   public void kick(Character other){
-    this.kick.hit(other);
+    this.kick_obj.hit(other);
   }
 
   public boolean isAlive(){

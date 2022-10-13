@@ -6,11 +6,9 @@ public class BasicKick {
     Character owner = null;
     BasicKick(Character owner){
         setOwner(owner);
-        System.out.println(this);
     }
 
     public void hit(Character c) {
-
     }
 
     void setOwner(Character owner){

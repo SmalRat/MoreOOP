@@ -5,8 +5,7 @@ public class Hobbit extends Character {
         super(3,0);
     }
 
-    @Override
-    public void kick(Character c) {
-
+    public String toString(){
+        return "Hobbit{hp=" + this.getHp() + ", power=" + this.getHp() + "}";
     }
 }
